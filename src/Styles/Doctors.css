@@ -1,0 +1,121 @@
+.doctor-section {
+    padding: 32px;
+    
+    text-align: center;
+  
+    background-image: url(https://img.freepik.com/free-photo/doctors-stethoscope-white-background_53876-146858.jpg);
+    background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+}
+.dt-title-content {
+    margin: 0 0 64px 0;
+}
+.dt-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+.dt-title > span {
+    position: relative;
+}
+.dt-title span::before {
+    content: '';
+    position: absolute;
+    width: 64%;
+    height: 4px;
+    background-color: #9D2553;
+    border-radius: 8px;
+    left: 0;
+    bottom: -12px;
+}
+.dt-description {
+    margin: 64px auto 0;
+    text-align: center;
+    color: rgb(77, 75, 75);
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    letter-spacing: .8px;
+    line-height: 1.8rem;
+}
+/* Doctor Cards */
+.dt-cards-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.dt-card {
+    width: 332px;
+    gap: 32px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    background-color: #ffffffcf;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px #424243;
+    padding: 20px 5px;
+    overflow: hidden;
+
+}
+.dt-card-img {
+    width: 270px;
+    height: 270px;
+    background-position: center;
+    background-color: #DDE5F8;
+    border-radius: 231px;
+    box-shadow: 4px 4px 8px #6f7074;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition:  0.5s ease-in-out;
+
+}
+.dt-card img:hover{
+    scale: 1.1;
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+
+.dt-card-name {
+    margin: 12px 0 0 0;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+.dt-card-title {
+    margin: 6px 0 8px;
+    color: #494949;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: .7px;
+}
+.dt-card-stars {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+.dt-card-reviews {
+    color: #5a5a5a;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .dt-title {
+        font-size: 32px;
+    }
+    .dt-description {
+        margin: 48px 0 0;
+        font-size: 18px;
+    }
+}
